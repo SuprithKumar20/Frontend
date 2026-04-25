@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ==================================getElemenentsbyId============================================================ -->
+    <!-- <h1 id="one"> </h1>
+    <h2 id ="two"></h2> -->
+    <!-- <script>
+        // innerHTML method identifes tags
+        let href=document.getElementById("one")
+        href.innerHTML="<i>Hello how are you<i>"
+        // textContent method do not identify element  
+        let href2=document.getElementById("two")
+        href2.textContent="<i>Hello how are you<i>"
+    </script> -->
+
+
+
+    <!-- =========================================get ElemenstBYName========================================================= -->
+    <!-- stores the elements with same name in the form of array  -->
+    <!-- <label>username</label><input type="text" name="username">
+    <label>password </label><input type="password" name="password">
+    <button onclick="Change()">submut </button>
+    <label>username</label><input type="text" name="username">
+    <label>password </label><input type="password" name="password">
+<script>
+    function Change(){
+    let inputref=document.getElementsByName('password')
+    inputref[0].style.border="5px solid green"
+    inputref[1].style.backgroundColor="red"
+    }
+</script>  -->
+
+    <!-- ==============================================getElementsByTagName=========================================================
+    <label>username</label><input type="text" name="username">
+    <label>password </label><input type="password" name="password">
+    <button onclick="Change()">submut </button>
+    <label>username</label><input type="text" name="username">
+    <label>password </label><input type="password" name="password">
+    <script>
+        let labelref = document.getElementsByTagName('label')
+        console.log(labelref)
+        labelref[0].innerHTML = "Email"
+        labelref[1].textContent = "email"
+        let inputref = document.getElementsByTagName('input')
+        console.log(inputref)
+        for (var data of inputref) {
+            data.style.border = " 5px solid red"
+        }
+    </script> -->
+
+
+    <!-- ===========================getElementsByClassName===================================
+ <!-- its used to find the elements on the webpager based on the class name attribute .it returns nodelist it is nothing but 
+ arrya of node html elements -->
+    <!-- 
+<p class="p1">loremrygfwebofwuenrmdwjxnqwertyuiokjgfdsazxcvbnjufcevbnj</p>
+<p>qwertyuioejrhtgyfudisoapyxcvtbnrme,tyudi</p>
+<p class="p1">qaswdefrgthyjukiolzsxdcfvgbhnjmsdfghuj</p>
+<p>qwertyuioejrhtgyfudisoapyxcvtbnrme,tyudi</p>
+<script>
+    let pref=document.getElementsByClassName('p1')
+    console.log(pref)
+    for (var x of pref){
+        x.innerHTML="welcome to js class"
+        x.style.fontFamily="cursive"
+        x.style.fontSize="xx-large"
+    } 
+// to access individual
+    pref[0].style.color="red"
+    ref[1].style.backgrounColor="yellow"
+</script> -->
+
+
+
+    <!-- ===============================        querySelector  ====================================================== -->
+    <!-- returns first element in the doucument that matches the specific selector of group of selector if no matches found returns null -->
+
+    <!-- <h1>iieuhe</h1>
+<p>ufbrfybruuuuuuuuuuuu</p>
+<h1>hello everyone</h1>
+<h4 class="four">this is the heading</h4>
+<h4 class="four">this is four</h4>
+<p id="one">lorem ipsum,dolor</p>
+<p id="one">lorem ipsum sit </p>
+
+<script>
+    var res=document.querySelector('h1')
+    console.log(res)
+    res.innerHTML="how are youo"
+    var res1=document.querySelector('p')
+    console.log(res1)
+    var res1=document.querySelector('p3')
+    console.log(res1)    //return null
+    
+</script> -->
+
+
+
+    <!-- ===============================        querySelectorAll  ====================================================== -->
+    <!-- returns all element in the doucument that matches the query if no matches found returns null -->
+
+    <!-- <h1>iieuhe</h1>
+<p>ufbrfybruuuuuuuuuuuu</p>
+<p>ufbrfybruuuuuuuuuuuu</p>
+<h1>hello everyone</h1>
+<h4 class="four">this is the heading</h4>
+<h4 class="four">this is four</h4>
+<p id="one">lorem ipsum,dolor</p>
+<p id="one">lorem ipsum sit </p>
+
+<script>
+    var res=document.querySelectorAll('h1')
+    console.log(res)
+    res.innerHTML="how are youo"
+    var res1=document.querySelectorAll('p')
+    console.log(res1)
+    var res1=document.querySelectorAll('p3')
+    console.log(res1)    //return null
+    
+</script> -->
+
+
+
+    <!-- ===========================        createElement            =================================== -->
+
+    <!-- we can create web elements dynamically using createElement() in order to dynamically appned to the webpage we can take the help of
+appneChild() -->
+
+                 <!-- <h1>Example to create web elements dynamically</h1>
+    <script>
+        // let btn = document.createElement('button')
+        // btn.innerHTML = "Dynamic button"
+
+        // let body = document.body
+        // body.appendChild(btn)
+
+        // let pre = document.createElement('pre')
+        // pre.textContent = "welcome to js class"
+        // body.appendChild(pre)
+
+        function OrderedList(name1, name2, name3, name4) {
+            let ul = document.createElement('ul')
+            let li1 = document.createElement('li')
+            let li2 = document.createElement('li')
+            let li3 = document.createElement('li')
+            let li4 = document.createElement('li')
+            li1.textContent = name1
+            li2.textContent = name2
+            li3.textContent = name3
+            li4.textContent = name4
+            ul.appendChild(li1)
+            ul.appendChild(li2)
+            ul.appendChild(li3)
+            ul.appendChild(li4)
+            body.appendChild(ol)
+        }
+        OrderedList("Riya", "Priya", "Sonia", "virat")
+        OrderedList("Alice", "Bob", "Charlie", "David")
+        OrderedList("Eve", "Frank", "Grace", "Henry") -->
+
+
+        <!-- // function unorderedlist(n1, n1, n3, n4) {
+        //     let ul = document.createElement('ul')
+        //     let li1 = document.createElement('li')
+        //     let li2 = document.createElement('li')
+        //     let li3 = document.createElement('li')
+        //     let li4 = document.createElement('li')
+        //     li.innerHTML = "n1"
+        //     li.innerHTML = "n2"
+        //     li.innerHTML = "n3"
+        //     li.innerHTML = "n4"
+        //     ul.appendChild(li1)
+        //     ul.appendChild(li2)
+        //     ul.appendChild(li3)
+        //     ul.appendChild(li4)
+        //     body.appendChild(ul)
+        // }
+        // unorderedlist("Riya", "Priya", "Sonia", "virat")
+        // unorderedlist("Alice", "Bob", "Charlie", "David")
+        // unorderedlist("Eve", "Frank", "Grace", "Henry") -->
+    <!-- </script> -->
+
+
+                                            <!-- remove an element  -->
+
+<!-- <h1 id="one"> welcome to my class</h1>
+<p>lorem sdfghjkxcvbnmtyuio</p>
+<script>
+    let btn=document.createElement('button')
+    btn.textContent="dynamic button"
+
+    let body=document.body
+    body.appendChild(btn)
+
+    let href =document.getElementById('one')
+    href.remove()
+
+</script> -->
+
+
+
+
+                                        <!-- setAttribute -->
+<!-- used to set a new attribute or change the attribute value of existing attribute on an html element -->
+
+<!-- 
+<img  id="two" src="https://tse1.mm.bing.net/th/id/OIP.p8rsM_9VuvOkpHnJAmDkBwHaCS?pid=Api&P=0&h=180">
+<input type="radio" id="one">option 1
+<script>
+    let imgref=document.getElementById('two')
+    imgref.setAttribute('src','https://freerangeamerican.us/wp-content/uploads/2023/02/ACR-Weapons-World_Facebook.jpg')
+
+    let inputeref=document.getElementById('one')
+    inputeref.setAttribute('type','checkbox')
+
+    let abbrevation=document.createElement('abbr')
+    abbrevation.innerHTML="RCB"
+    abbrevation.setAttribute("title",'royal challemgers bangrlore')
+
+    document.body.appendChild(abbrevation)
+</script> -->
+
+
+
+                                    <!-- getAttribute() -->
+<img  id="two" src="https://tse1.mm.bing.net/th/id/OIP.p8rsM_9VuvOkpHnJAmDkBwHaCS?pid=Api&P=0&h=180">
+<input type="radio" id="one">option 1
+
+<script>
+    let inputref=document.getElementById('one')
+    let res =inputref.getAttribute('type')
+    console.log(res)
+</script>
+
+
+
+
+
+</body>
+
+</html>
