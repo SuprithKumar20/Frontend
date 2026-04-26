@@ -146,7 +146,7 @@ appneChild() -->
         // body.appendChild(pre)
 
         function OrderedList(name1, name2, name3, name4) {
-            let ul = document.createElement('ul')
+            let ol = document.createElement('ol')
             let li1 = document.createElement('li')
             let li2 = document.createElement('li')
             let li3 = document.createElement('li')
@@ -155,10 +155,10 @@ appneChild() -->
             li2.textContent = name2
             li3.textContent = name3
             li4.textContent = name4
-            ul.appendChild(li1)
-            ul.appendChild(li2)
-            ul.appendChild(li3)
-            ul.appendChild(li4)
+            ol.appendChild(li1)
+            ol.appendChild(li2)
+            ol.appendChild(li3)
+            ol.appendChild(li4)
             body.appendChild(ol)
         }
         OrderedList("Riya", "Priya", "Sonia", "virat")
