@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one {
+            width: "200px";
+            height: "200px";
+            background-color: "red";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <H1>Example for event object </H1>
+    <button onclick="clickHandler(event)">click for event object </button>
+    <script>
+        function clickHandler(event){
+            console.log(event)
+            console.log(event.target)
+            console.log(event.type)
+            event.target.style.backgroundColor='red'
+            for(let data in event){
+                console.log(data)
+            }
+        }
+    </script> -->
+
+    <!-- onChange event -->
+    <!-- <label>select city</label>
+    <select onchange="onChange(event)">
+        <option value="">select</option>
+        <option value="chennai">chennai</option>
+        <option value="bangalore">bangalore</option>
+        <option value="mumbai">mumbai</option>
+    </select>
+    <input type="radio" name="gender" value="male" onchange="Optionchange(event)">Male
+    <input type="radio" name="gender" value="female" onchange="Optionchange(event)">Female
+    <label>Select skill</label>
+    <input type="checkbox" name="skill" value="html" onchange="Optionchange(event)">HTML
+    <input type="checkbox" name="skill" value="css" onchange="Optionchange(event)">CSS
+    <input type="checkbox" name="skill" value="js" onchange="Optionchange(event)">JS
+    <script>
+        function onChange(event){
+            alert("option changed to " + event.target.value);
+        }
+        function Optionchange(event){
+            alert("option changed to " + event.target.value);
+        }
+    </script> -->
+
+
+    <!-- onKeydown event -->
+    <!-- <input type="text" placeholder="enter your text" onkeydown="Keypress(event)">
+<script>
+function Keypress(event){
+
+    console.log("key pressed"+event.target.value)
+
+}
+</script> -->
+
+    <!-- onmouseover | onmouseout
+theese are the events related to mouse move activity
+onmouseover:when we take the cursor or any web element it gets triggered
+onmouseout:when we take out the cursor from any web element it gets triggered -->
+
+    <!-- <div onmouseover="mouseover()" onmouseout="mouseout()" id="one"></div>
+
+<script>
+    function mouseover(){
+        let mouse=document.getElementById(one)
+        mouse.backgroundColor="red"
+    }
+        function mouseout(){
+        let mouse=document.getElementById(one)
+        mouse.backgroundColor="red"
+        }
+
+</script> -->
+
+    <!-- onsubmit -->
+    <!-- 
+<center>
+    <form onsubmit="validate()">
+        <label>Username</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" name="submit">
+    </form>
+</center>
+<script>
+    function validate(){
+        let username=document.getElementById("username").value
+        let password=document.getElementById("password").value
+        if(username=="" || password==""){
+            alert("pleaese fill all the field")
+        }
+        else{
+            alert("login succefull")
+        }
+    }
+</script> -->
+
+    <!-- onFocus
+the focus event listener in JavaScript is triggered when an element gains focus usually through keyboard navigation (like pressing tab button)
+or when clicked. -->
+
+    <input type="text" id="myinput" onfocus="focus()">
+    <script>
+        function focus() {
+            let inputref = document.getElementById("myinput")
+            inputref.style.border = "2px slid green"
+            inputref.style.backgroundColor = 'red'
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- //? all actions in js we call it as event
+//? to find how many events we have in js type in console onclick
+
+//? Eventsactions
+//? event is nothing but some activity on the webpage>event consist of two things event listener and event handler
+
+//! EVENT LISTENER
+// it is used to catch the event occured on the element
+// ex:-onclick ,onchange,onload,onsubmit,onkeydown,onmouseover,onmouseout
+
+//! EVENT HANDLER
+// it is function or js Fucntion call
+ // <button onclick="fn()">clickme</button> 
+// *note:Event is a predefined object in javascript where it contains allthe information related to click event
