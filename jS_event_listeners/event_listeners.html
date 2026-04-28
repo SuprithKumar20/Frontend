@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #on {
+            width: "200px";
+            height: "200px";
+            background-color: "red";
+        }
+        </style>
 </head>
 
 <body>
-
-    <!-- adding evenet listener in js -->
-    <button id="btn">Submut</button>
+    <!-- ------------------------------------adding evenet listener in js------------------------------------------ -->
+    
+    <button id="btn">Submit</button>
     <select id="dropdown">
         <option value="one">one</option>
         <option value="two">two</option>
@@ -18,6 +25,7 @@
         <option value="four">four</option>
         <option value="five">five</option>
     </select>
+    <div onmouseover="mouseover()" onmouseout="mouseout()" id="on"></div>
     <script>
         document.getElementById("btn").addEventListener(
             'click', (event) => {
@@ -29,9 +37,14 @@
                 alert("the value is " + event.target.value)
             }
         )
+        document.getElementById('on').addEventListener(
+            'mouseover', (event) => {
+                event.target.style.backgroundColor = "blue"
+            }
+        )            
+            
     </script>
-
-
+<!-- ===================================================================================== -->
 </body>
 </html>
 

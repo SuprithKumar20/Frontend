@@ -1,0 +1,54 @@
+
+<!-- Event delegation is a technique in JS where instead od adding event listeners to individual child element ,we can add a single event
+listener to a parent elemnent -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button class="btn" >click1</button>
+        <button class="btn" >click2</button>
+        <button class="btn" >click3</button>
+    </div>
+
+    
+    <!-- =========================== without delegation========================= -->
+    <!-- <script>
+        // function notify(){
+        //     alert("goodmoranin")
+        // }
+        let btn1=document.getElementById('one');
+        let btn2=document.getElementById('two')
+        let btn3=document.getElementById('three');
+        btn1.addEventListener('click',function(){
+            alert('good mornn')
+        })
+        btn2.addEventListener('click',function(){
+            alert('good mornn')
+        })
+    </script> -->
+
+    <script>
+        let parent=document.getElementById('parent')
+        parent.addEventListener('click', function(e){
+            if( e.target.classList.contains('btn')){
+                alert(e.target.innerText)
+            }
+        })
+        
+     
+    </script>
+
+</body>
+
+</html>
+
+
+
