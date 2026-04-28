@@ -1,0 +1,31 @@
+EVENT CAPTURING:
+--------------
+The capturing phase is the first phase of propagation in the DOM.
+Evnt capturing means the event is triggered firts of an outermoist or parent elemnet and then goes to the innermost or child elemnt
+to perform event capturing for the addeventListener along with the event type and callback function we have to
+pass a third argument as true.
+
+SYNTAX:
+- event.addEventListener(event,function,true);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">button</button>
+    </div>    
+    <script>
+        document.getElementById('parent').addEventListener('click',function(){
+            alert("parent clicked")
+        },true)
+        document.getElementById('child').addEventListener('click',function(){
+            alert("child clicked")
+        },true)
+    </script>
+</body>
+</html>
