@@ -136,3 +136,33 @@
 // // New way using array destructuring
 // const [x, y, z]=arr;
 // console.log(x, y, z);  // 1 2 3
+
+                                        //!REST PARAMETERS
+
+// Rest parameters allow a function to accept and indefinite number of arguments as an array and also it can applied for array or 
+// obejct to store elemnts
+
+// // for functions
+// function greet(greeting,...names){
+//     for (let name of names){
+//         console.log(`${greeting},${name}`)
+//     }
+// }
+// greet(`hello`,`how`,`are`,`you`)
+
+// // for array
+// const numbers=[1,2,3,4,5,6,7]
+// const[first,second,...rest]=numbers
+// console.log(first)
+// console.log(second)
+// console.log(rest)
+
+// // fro objects
+// var person={
+//     name:"virat",
+//     age:22,
+//     city:"mumbai"
+// }
+// const{name,...data}=person
+// console.log(name)
+// console.log(data)
