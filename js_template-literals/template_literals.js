@@ -91,3 +91,48 @@
 // let arr2=[...arr,5,6,7]
 // console.log(arr2)
 
+                                        //!DESCTRUCTING OF ARRAY OR OBJECT
+// // it is a technique in JS to unpack properties or elements from object or array and assigning variables
+
+
+// //! Object Destructuring
+
+// const person={
+//     name:"Deepak",
+//     age:22,
+//     city:"Bangalore"
+// };
+
+// // Old way
+// const name=person.name;
+// const age=person.age;
+// const city=person.city;
+// console.log(name, age, city);  // Deepak 22 Bangalore
+
+// // New way using object destructuring
+// const {name, age, city}=person;
+// console.log(name, age, city);  // Deepak 22 Bangalore
+
+// // You can also assign new variable names while destructuring
+// const {name:personName, age:personAge, city:personCity}=person;
+// console.log(personName, personAge, personCity);  // Deepak 22 Bangalore
+
+// // --------------------------------------------------------------------------------------------------
+
+// //! array-destructuring
+
+// // Array destructuring is a convenient way to extract values from arrays and assign them to variables.
+// // It was introduced in ES6 (ECMAScript 2015).
+
+// //: Array Destructuring
+
+// const arr=[1,2,3];
+// // Old way
+// const a=arr[0];
+// const b=arr[1];
+// const c=arr[2];
+// console.log(a, b, c);  // 1 2 3
+
+// // New way using array destructuring
+// const [x, y, z]=arr;
+// console.log(x, y, z);  // 1 2 3
