@@ -157,7 +157,7 @@
 // console.log(second)
 // console.log(rest)
 
-// // fro objects
+// // for objects
 // var person={
 //     name:"virat",
 //     age:22,
