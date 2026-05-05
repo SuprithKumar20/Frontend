@@ -76,22 +76,22 @@
 // //              var fnName=<fnName>.bind(objName);
 // //                  fnName()
 
-``
-var obj1={
-    c:100
-}
-var obj2={
-    c:500
-}
-function fnAdd(x,y){
-    let z=x+y+this.c
-    console.log(z)
-}
-let fnadd=fnAdd.bind(obj1)
-fnadd(10,10)
-let fNadd=fnadd.bind(obj2,50,50)
-fnadd()
-fnadd.bind(obj2,5,5)()
-fnadd.bind(obj1)(10,10)
+
+// var obj1={
+//     c:100
+// }
+// var obj2={
+//     c:500
+// }
+// function fnAdd(x,y){
+//     let z=x+y+this.c
+//     console.log(z)
+// }
+// let fnadd=fnAdd.bind(obj1)
+// fnadd(10,10)
+// let fNadd=fnadd.bind(obj2,50,50)
+// fnadd()
+// fnadd.bind(obj2,5,5)()
+// fnadd.bind(obj1)(10,10)
 
 
