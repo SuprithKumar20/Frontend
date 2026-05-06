@@ -1,4 +1,4 @@
-//! ASYNCHRONOUS PROGRAMMING
+                                //! ASYNCHRONOUS PROGRAMMING
 //- Asynchronous pgm in JS is a non-blocking execution model where long-running tasks can be executed in the background
 //  without blocking the main thread.Means while other operations can continue to run.
 //- asynchronous pgm is used with long-running tasks like network requests,file operations ,timers,etc.
@@ -84,17 +84,54 @@
 // make a suspension pont where exceution may wait for the result of async function or methods.
 
 
-async function fun1(){
-    //fetch the data from the URL
-    let response =await fetch("'https://fakestoreapi.com/products/1");
-    //convert the response to json
-    let jsonData=await response.json();
-    //Log the Json data
-    console.log(jsonData);
-    //You can also assign jsonData to a varaiable if you want to use it later
-    let result =jsonData;
-    //log the result
-    console.log(result);
-    //call the asyn fucntion
-}
-fun1();
+// async function fun1(){
+//     //fetch the data from the URL
+//     let response =await fetch("https://fakestoreapi.com/products/1");
+//     //convert the response to json
+//     let jsonData=await response.json();
+//     //Log the Json data
+//     console.log(jsonData);
+//     //You can also assign jsonData to a varaiable if you want to use it later
+//     let result =jsonData;
+//     //log the result
+//     console.log(result);
+//     //call the asyn fucntion
+// }
+// fun1();
+
+
+
+                            //! Different ways to make api get and post request
+// // using fetch
+// fetch('https://fakestoreapi.com/products/1')
+// .then(response=>response.json())
+// .then(data=>console.log(data))
+// .catch(error=>console.error(error));
+
+// // with async/await:
+
+// async function getData(){
+//     try{
+//         const response=await fetch("https://fakestoreapi.com/products/1");
+//         const data=await response.json();
+//         console.log(data);
+//     }catch(error){
+//         console.log(error);
+//     }
+// }
+// getData();
+
+                            //! USing fetch() with post request
+
+// fetch('https://fakestoreapi.com/products/1',{
+//     method:"POST",
+//     headers:{
+//         "content-type":"application/json"
+//     },
+//     body:JSON.stringify({
+//         name:"Suprith",
+//         age:25
+//     })
+// })
+// .then(res=>res.json())
+// .then(data=>console.log(data))
