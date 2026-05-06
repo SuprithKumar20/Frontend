@@ -22,7 +22,7 @@ console.log(original.address.city)
 let numbers=[1,2,[3,4]]
 let copyNumber=number.slice()
 copyNumber[2][0]=99
-con
+
 
 
 
